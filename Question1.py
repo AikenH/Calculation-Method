@@ -101,7 +101,7 @@ for i in range(len(x_plot)-1):
     temp= np.square(x_plot[i+1]-x_plot[i])+np.square(y_plot[i+1]-y_plot[i])
     V = np.sqrt(temp)
     LineLens = LineLens + V
-
+LineLens = round(LineLens, 2)
 print('***************Lens**********')
 print(LineLens)
 

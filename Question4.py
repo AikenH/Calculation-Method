@@ -1,6 +1,5 @@
 '''
 通过对矩阵的最终结果的分析，我认为最后的结果应该是一个稳定值，但是由于高斯消去法的舍去误差
-
 '''
 import pandas as pd 
 import matplotlib.pyplot as plt 
@@ -11,7 +10,7 @@ import struct
 # 文件读取，可以通过这里选择文件读取
 # 对所有的文件都可以进行处理，改变一个数字即可
 # 解析文件头，并输出
-filename = 'data20194.dat'
+filename = 'data20193.dat'
 Headinfo = np.fromfile(filename,dtype=np.int32)
 head = Headinfo[0:5].astype(np.int32)
 print(head)

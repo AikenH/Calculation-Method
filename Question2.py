@@ -63,9 +63,9 @@ def interfunc(x,para,k):
 
 # 将各个月的数据输入进行拟合计算
 # 通过k选择最小二乘法的次数（阶数）
-k = 2
+k = 3 
 input_x = np.arange(1,32)
-para = myl(input_x,Average[0][:],k)
+para = myl(input_x,Average[2][:],k)
 
 def fucx(x,para,k):
     if k == 1 :
@@ -81,10 +81,10 @@ y_plot = np.array([fucx(t,para,k) for t in x_plot])
 
 plt.axis('scaled')
 plt.xlim((0,31))
-plt.ylim((15,40))
-plt.scatter(input_x,Average[0][:])
+plt.ylim((15,30))
+plt.scatter(input_x,Average[2][:])
 plt.plot(x_plot,y_plot)
-
+plt.show()
 Ans = interfunc(31,para,k)-interfunc(1,para,k)
 Ans = Ans/31
 print(Ans)

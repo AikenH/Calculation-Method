@@ -92,6 +92,7 @@ LineLens = 0
 
 plt.plot(x_plot,y_plot)
 plt.scatter(weekLL_x,weekLL_y)
+plt.show()
 
 # 对三次样条插值函数分析后发现最后的曲线趋于平缓，
 # 故延长曲线，作为再利用数值积分的方法，来控制计算到达550e的时间
